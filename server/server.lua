@@ -33,7 +33,6 @@ AddEventHandler('fusti_joblisting:setPlayerJob', function(job, grade)
     local xPlayer = ESX.GetPlayerFromId(source)
     if not IsJobAvailable(job) then
         xPlayer.kick("Don't try to cheat!")
-        return
     end
     xPlayer.setJob(job, grade)
 end)
