@@ -7,6 +7,7 @@ local function setupPoint()
     ped = CreatePed(0, pedModel, position.x, position.y, position.z - 1, 206.0, true, true)
     FreezeEntityPosition(ped, true)
     SetEntityInvincible(ped, true)
+    TaskSetBlockingOfNonTemporaryEvents(ped, true)
     local options = {
         {
             name = 'openMenu',
